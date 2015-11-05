@@ -1,0 +1,21 @@
+<ion-view view-title="Add new Place" ng-controller="AddPlaceCtrl">
+<ion-content>
+<div class="list">
+  <label class="item item-input">
+    <input type="text" ng-model="place.name" placeholder="Location">
+  </label>
+  <label class="item item-input">
+    <textarea rows="4" ng-model="place.desc" placeholder="Description"></textarea>
+  </label>
+  <label class="item item-input">
+    <input type="text" ng-model="place.city" placeholder="City">
+  </label>
+  <div class="item item-body">
+    <img class="full-image" src={{place.img}}>
+  </div>
+    	 <a class="button button-assertive button-block" ng-click="takePhoto()">Take Photo</a>
+  </div>
+  	 <a class="button button-calm button-block" ng-click="addItem()">Add new Place</a>
+</div>
+</ion-content>
+</ion-view>

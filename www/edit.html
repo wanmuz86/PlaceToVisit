@@ -1,0 +1,16 @@
+<ion-view view-title="{{place.name}}" ng-controller="EditPlaceCtrl">
+<ion-content>
+<div class="list card">
+  <div class="item">
+    <h2>{{place.name}}</h2>
+    <p>{{place.city}}</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="{{place.img}}">
+    <p>
+      {{place.desc}}
+    </p>
+  </div>
+</ion-content>
+</ion-view>

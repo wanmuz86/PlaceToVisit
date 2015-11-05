@@ -1,0 +1,13 @@
+    <ion-view view-title="Place to Visit">
+	<ion-content ng-controller="PlaceToVisitCtrl">
+	  <ion-list>
+		<a href="#/edit/{{place.placeId}}" class="item item-thumbnail-left" ng-repeat="place in places" >
+		<img src="{{place.img}}">
+		<h2>{{place.name}}</h2>
+		<p>{{place.city}}</p>
+	</a>
+	  </ion-list>
+	  <a class="button button-calm button-block" href="#/add">Add new Item</a>
+	    </ion-content>
+	</ion-view>
+      
